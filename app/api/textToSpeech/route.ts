@@ -7,12 +7,11 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-// const speechFile = path.resolve("./speech.mp3");
 export const maxDuration = 60;
 export async function POST(req: Request) {
   try {
     const body = await req.json();
-    console.log(body)
+    console.log(body);
     const { prompt, voice } = body;
 
     if (!openai.apiKey) {
