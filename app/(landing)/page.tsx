@@ -94,9 +94,8 @@ const AISpeaker = () => {
       <Heading
         title="AI Speaker"
         description="Your Stage Companion"
-        icon={Voicemail}
-        iconColor="text-green-500"
-        bgColor="bg-green-500/10"
+        imageSrc="/hlb-logo.png"
+        bgColor="bg-gray-100"
       />
       <div className="px-4 lg:px-8">
         <div>
